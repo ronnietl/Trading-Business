@@ -290,7 +290,7 @@
       const reader = new FileReader();
       reader.onload = function(e) {
         const text = e.target.result;
-        const lines = text.split("\n").slice(1); // ¥h±¼¼ÐÃD¦C
+        const lines = text.split("\n").slice(1); // Â¥hÂ±Â¼Â¼ÃÃƒDÂ¦C
         lines.forEach(line => {
           if (!line.trim()) return;
           const [date, tradeNum, code, side, entry, stop, exit, qty, profit, rr, remarks] = line.split(",");
@@ -313,7 +313,7 @@
       reader.readAsText(file);
     }
 
-    // ªì©l¤Æ
+    // ÂªÃ¬Â©lÂ¤Ã†
     addTradeBlock();
     renderDays();
 
